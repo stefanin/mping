@@ -28,6 +28,7 @@ def mping(network): #network= x.x.x.x/x return dict{ip(int), time(float)}
         return ipscan
 
 if __name__ == '__main__':
+    print('MPING rel.0.1 by stefanin https://github.com/stefanin/mping.git')
     try:
         network = sys.argv[1]
         for addr, rtime in mping(network).items():
